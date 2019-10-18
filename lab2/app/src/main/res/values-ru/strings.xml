@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Локал</string>
+    <string name="button" translatable="false">Отправить</string>
+</resources>
