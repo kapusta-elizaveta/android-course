@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Local</string>
     <string name="button" translatable="false">Send</string>
 </resources>
