@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Local</string>
+    <string name="button" translatable="false">Send</string>
+    <string name="close_app">Close app</string>
+</resources>
