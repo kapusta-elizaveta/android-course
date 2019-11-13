@@ -22,7 +22,6 @@
 
     <Button
         android:id="@+id/button2"
-        android:onClick="answer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/style_text"

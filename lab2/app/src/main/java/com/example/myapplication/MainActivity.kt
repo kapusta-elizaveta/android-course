@@ -11,6 +11,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        button.setOnClickListener {
+            val intent = Intent(this, SecondActivity::class.java).apply {
+                putExtra("message", textViewAnswer.text.toString())
+            }
+            startActivityForResult(intent, 10)
+        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -20,10 +27,4 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun question(view: View){
-        val intent = Intent(this, SecondActivity::class.java).apply {
-            putExtra("message", textViewAnswer.text.toString())
-        }
-        startActivityForResult(intent, 10)
-    }
 }
