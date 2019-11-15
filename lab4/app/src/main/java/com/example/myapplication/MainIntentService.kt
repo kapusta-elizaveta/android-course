@@ -28,7 +28,7 @@ class MainIntentService : IntentService("MainIntentService") {
         val responseIntent = Intent("main_activity")
         responseIntent.putExtra("quantity", numbers.size)
         responseIntent.putExtra("result",str.toString())
-        LocalBroadcastManager.getInstance(this).sendBroadcast(responseIntent);
+        LocalBroadcastManager.getInstance(this).sendBroadcast(responseIntent)
     }
 
     private fun isPrime(n: Int): Boolean {

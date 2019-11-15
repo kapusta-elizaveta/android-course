@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        LocalBroadcastManager.getInstance(this).registerReceiver(broadCastReceiver, IntentFilter("main_activity"));
+        LocalBroadcastManager.getInstance(this).registerReceiver(broadCastReceiver, IntentFilter("main_activity"))
     }
 
     override fun onConfigurationChanged(newConfig: Configuration) {
@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, MainIntentService::class.java)
         intent.putExtra("com.example.myapplication", inputNumber.text.toString().toInt())
         this.startService(intent)
-        button.isEnabled = false;
+        button.isEnabled = false
     }
 
     val broadCastReceiver = object : BroadcastReceiver() {
