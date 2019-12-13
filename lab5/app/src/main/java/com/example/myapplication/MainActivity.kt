@@ -42,8 +42,5 @@ class MainActivity : AppCompatActivity() {
         } else{
             textView.text = ""
         }
-//        else if(firstName.isNotEmpty() and lastName.isNotEmpty()) {
-//            textView.text = userDao?.getByFilter(firstName, lastName).toString()
-//        }
     }
 }
